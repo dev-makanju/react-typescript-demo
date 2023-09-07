@@ -1,14 +1,14 @@
+import List from './components/generics/List';
 import './App.css';
-import User from './components/context/User';
-import { UserContextProvider } from './components/context/UserContext';
 
 function App() {
 
   return (
     <div className="App">
-      <UserContextProvider>
-         <User />
-      </UserContextProvider>
+      <List
+        items={['Batman','Batwoman','Batkids']} 
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }
