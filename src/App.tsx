@@ -1,6 +1,7 @@
 import './App.css';
 import List from './components/generics/List';
 import RandomNumber from './components/restriction/RandomNumber';
+import Button from './components/html/Button';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         onClick={(item) => console.log(item)}
       />
       <RandomNumber value={10} isPositive={true} />
+      <Button variant="primary">Click</Button>
     </div>
   );
 }
